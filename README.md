@@ -1,5 +1,5 @@
-###### https://caaptv.github.io/wetv/
+###### https://zoptv.github.io/wetv/
 
-###### [jwplayer](https://caaptv.github.io/file/jwplayer.html)
+###### [jwplayer](https://zoptv.github.io/wetv/jwplayer.html)
 
-###### [player.swf](https://caaptv.github.io/file/player.swf)
+###### [player.swf](https://zoptv.github.io/wetv/player.swf)
