@@ -1,0 +1,48 @@
+<style>
+h1 {font-family:impact,arial; font-size: 90px; color: red; -webkit-text-stroke: 2px black; text-shadow: 2px 2px 2px rgb(170,170,170);}
+</style>
+<center>
+<h1 style="color: white;"> WELCOME   أهلا وسهلا</h1>
+<h1>  www.wetv.tk  مرحبا</h1>
+<h1 style="color: #0bf90b;"> www.wetv.tk </h1>
+
+<!--- PLAYER TEAM CODE -->
+<h1 style="color: red;"> Video Bitmovin Player </h1>
+<div style="width:600px; height:400px">					 
+<script type="text/javascript" src="http://bitmovin-a.akamaihd.net/bitmovin-player/stable/7.0.4/bitmovinplayer.js"></script>
+<script type="text/javascript" src="http://bitmovin-a.akamaihd.net/bitmovin-analytics/stable/1/bitmovinanalytics.min.js"></script>
+<div id="bitmovin-player"></div>
+<script type="text/javascript">
+var config = {
+  key: "e3cf8a50-3cd2-4fba-95aa-917b18b6b6ee", //Your bitmovin analytics key
+  playerKey: "a6e31908-550a-4f75-b4bc-a9d89880a733", //Your player key (bitmovin, jw, ..) (optional)
+  player: bitmovin.analytics.Players.BITMOVIN,
+  cdnProvider: bitmovin.analytics.CdnProviders.AKAMAI,
+  debug: false
+};
+var analytics = bitmovin.analytics(config);
+var conf = {
+  key: '29ba4a30-8b5e-4336-a7dd-c94ff3b25f30',
+  source: {
+    dash: '',
+    hls: '',
+    progressive: 'https://v.sharefa.st/q8JUeymbSYY1.mp4',
+    poster: 'http://bitdash-a.akamaihd.net/content/art-of-motion_drm/art-of-motion_poster.jpg',
+    tracks: [{
+      file: 'https://bitdash-a.akamaihd.net/content/MI201109210084_1/thumbnails/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.vtt',
+      kind: 'thumbnails'
+    }],
+    userId: "Bitmovin website",
+    videoId: "Red Bull Art of Motion"
+  }
+};
+var player = bitmovin.player('bitmovin-player');
+player.setup(conf);
+analytics.register(player);
+</script>
+<style>
+.bmpui-ui-watermark {
+  display: none;
+}
+</style></div> <!--- END PLAYER TEAM CODE 	-->
+</center>
